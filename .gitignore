@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Generated data (too large for git)
+data/episodes.json
+data/episodes-full.json
+data/segments.json
+data/stats.json
+
+# Cloned transcripts (users will clone themselves)
+lennys-podcast-transcripts/
+data/transcripts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build artifacts (optional - you may want to include dist/)
+# dist/

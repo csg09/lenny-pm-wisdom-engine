@@ -1,0 +1,37 @@
+{
+  "name": "pm-wisdom-engine",
+  "version": "1.0.0",
+  "description": "Search 300+ Lenny's Podcast episodes for PM wisdom. Features Decision Simulator and Career Stage Filter.",
+  "main": "scripts/ingest.js",
+  "scripts": {
+    "ingest": "node scripts/ingest.js",
+    "extract": "node scripts/extract-frameworks.js",
+    "contradictions": "node scripts/find-contradictions.js",
+    "build": "node scripts/build-app.js",
+    "all": "npm run ingest && npm run extract && npm run contradictions && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csg09/pm-wisdom-engine.git"
+  },
+  "keywords": [
+    "podcast",
+    "product-management",
+    "lenny-rachitsky",
+    "knowledge-base",
+    "pm",
+    "frameworks",
+    "decision-simulator"
+  ],
+  "author": "CSG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csg09/pm-wisdom-engine/issues"
+  },
+  "homepage": "https://github.com/csg09/pm-wisdom-engine#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "glob": "^10.3.10",
+    "lunr": "^2.3.9"
+  }
+}
